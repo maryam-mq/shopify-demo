@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - DemoShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">DemoShop</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart 🛒 <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="product-details">
+    <div class="product-container">
+      <img src="" alt="" class="product-img" id="product-img">
+
+      <div class="product-info">
+        <h2 id="product-title"></h2>
+        <p class="price" id="product-price"></p>
+        <p class="description" id="product-desc"></p>
+        <button id="add-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    // Sample product data
+    const products = {
+      1: {title:'Sneakers', price:50, desc:'Stylish and comfortable sneakers.', img:'https://via.placeholder.com/400x400?text=Sneakers'},
+      2: {title:'Backpack', price:35, desc:'Durable backpack for daily use.', img:'https://via.placeholder.com/400x400?text=Backpack'},
+      3: {title:'Headphones', price:70, desc:'High-quality sound headphones.', img:'https://via.placeholder.com/400x400?text=Headphones'},
+      4: {title:'Smart Watch', price:120, desc:'Feature-packed smart watch.', img:'https://via.placeholder.com/400x400?text=Smart+Watch'},
+      5: {title:'Sunglasses', price:25, desc:'Cool and protective sunglasses.', img:'https://via.placeholder.com/400x400?text=Sunglasses'},
+      6: {title:'Jacket', price:90, desc:'Warm and stylish jacket.', img:'https://via.placeholder.com/400x400?text=Jacket'}
+    };
+
+    // Get product ID from URL
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    const product = products[id];
+
+    // Fill product details
+    document.getElementById('product-img').src = product.img;
+    document.getElementById('product-title').textContent = product.title;
+    document.getElementById('product-price').textContent = '$' + product.price;
+    document.getElementById('product-desc').textContent = product.desc;
+
+    document.getElementById('add-cart-btn').onclick = () => addToCart(product.title, product.price);
+  </script>
+</body>
+</html>

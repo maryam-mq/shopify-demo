@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DemoShop - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">DemoShop</h1>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart 🛒 <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Discover Your Style</h1>
+    <p>Shop the latest trending products</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <a href="product.html?id=1">
+          <img src="img1.png" alt="Sneakers">
+          <h3>Sneakers</h3>
+        </a>
+        <p>$50</p>
+        <button onclick="addToCart('Sneakers',50)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <a href="product.html?id=2">
+          <img src="img2.png" alt="Backpack">
+          <h3>Backpack</h3>
+        </a>
+        <p>$35</p>
+        <button onclick="addToCart('Backpack',35)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <a href="product.html?id=3">
+          <img src="img3.png" alt="Headphones">
+          <h3>Headphones</h3>
+        </a>
+        <p>$70</p>
+        <button onclick="addToCart('Headphones',70)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

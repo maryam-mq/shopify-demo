@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - DemoShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">DemoShop</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="cart.html">Cart 🛒 <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Products Grid -->
+  <section class="products">
+    <h2>All Products</h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <a href="product.html?id=1">
+          <img src="img1.png" alt="Sneakers">
+          <h3>Sneakers</h3>
+        </a>
+        <p>$50</p>
+        <button onclick="addToCart('Sneakers',50)">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <a href="product.html?id=2">
+          <img src="img2.png" alt="Backpack">
+          <h3>Backpack</h3>
+        </a>
+        <p>$35</p>
+        <button onclick="addToCart('Backpack',35)">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <a href="product.html?id=3">
+          <img src="img3.png" alt="Headphones">
+          <h3>Headphones</h3>
+        </a>
+        <p>$70</p>
+        <button onclick="addToCart('Headphones',70)">Add to Cart</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <a href="product.html?id=4">
+          <img src="img4.png" alt="Smart Watch">
+          <h3>Smart Watch</h3>
+        </a>
+        <p>$120</p>
+        <button onclick="addToCart('Smart Watch',120)">Add to Cart</button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <a href="product.html?id=5">
+          <img src="img5.png" alt="Sunglasses">
+          <h3>Sunglasses</h3>
+        </a>
+        <p>$25</p>
+        <button onclick="addToCart('Sunglasses',25)">Add to Cart</button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <a href="product.html?id=6">
+          <img src="img6.png" alt="Jacket">
+          <h3>Jacket</h3>
+        </a>
+        <p>$90</p>
+        <button onclick="addToCart('Jacket',90)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
