@@ -34,12 +34,12 @@ It is designed to showcase a modern, responsive, and interactive store interface
 
 shopify-demo-store/
 │
-├── index.html # Homepage
-├── products.html # Products listing page
-├── product.html # Product details page
-├── cart.html # Cart page
-├── css/
-│ └── style.css # Styles
-├── js/
-│ └── script.js # JavaScript functionality
-└── README.md # Project documentation
+|├── index.html # Homepage
+|├── products.html # Products listing page
+|├── product.html # Product details page
+|├── cart.html # Cart page
+|├── css/
+|│ └── style.css # Styles
+|├── js/
+|│ └── script.js # JavaScript functionality
+|└── README.md # Project documentation
